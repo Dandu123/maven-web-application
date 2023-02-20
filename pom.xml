@@ -103,7 +103,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>icbank</name>
-	      <urlhttp://3.108.64.94:9980/manju/repository/icbank-snapshot/></url>
+	      <url>http://3.108.64.94:9980/manju/repository/icbank-snapshot/></url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
