@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>hdfcbank</name>
-	      <url>http://3.109.62.204:9980/manju/repository/hdfcbank/></url>
+	      <url>http://43.205.199.207:9980/manju/repository/hdfcbank/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>icbank</name>
-	      <url>http://3.109.62.204:9980/manju/repository/icbank/</url>
+	      <url>http://43.205.199.207:9980/manju/repository/icbank/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
