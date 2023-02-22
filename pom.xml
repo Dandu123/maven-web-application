@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>hdfcbank</name>
-	      <url>http://172.31.1.241:8081/repository/hdfcbank-release/</url>
+	      <url>http://65.2.123.125:8081/repository/hdfcbank-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>icbank</name>
-	      <url>http://172.31.1.241:8081/repository/hdfcbank-snapshot/</url>
+	      <url>http://65.2.123.125:8081/repository/hdfcbank-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
