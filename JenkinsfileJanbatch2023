@@ -2,8 +2,9 @@
 node{
 
 try{
-
- // sendSlackNotifications('STARTED')
+/*
+sendSlackNotifications('STARTED')
+*/
  def mavenHome = tool name: "maven 3.8.7"
  
  echo "The JobName is: ${env.JOB_NAME}" 
