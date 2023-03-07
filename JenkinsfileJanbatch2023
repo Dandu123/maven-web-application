@@ -1,7 +1,7 @@
 
 node{
 
-try{
+//try{
  def mavenHome = tool name: "maven 3.8.7"
  
  echo "The JobName is: ${env.JOB_NAME}" 
@@ -37,7 +37,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
   }
   */
   }//try closing
-  
+  /*
   catch(e){
   currentBuild.result="FAILURE"
   throw e
@@ -45,7 +45,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
   finally{
   notifyBuild(currentBuild.result)
   }
-  
+  */
 } //Node closing
 
 /*
