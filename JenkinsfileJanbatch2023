@@ -46,7 +46,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
   notifyBuild(currentBuild.result)
   }
   */
-} //Node closing
+}
 
 /*
 //Code Snippet for sending slack notifications.
