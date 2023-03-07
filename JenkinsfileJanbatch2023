@@ -2,16 +2,13 @@
 node{
 
 try{
-/*
-sendSlackNotifications('STARTED')
-*/
  def mavenHome = tool name: "maven 3.8.7"
  
  echo "The JobName is: ${env.JOB_NAME}" 
  echo "The node name is: ${env.NODE_NAME}"
  echo "The build number is: ${env.BUILD_NUMBER}"
  
-//  properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
+properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
   
 
   stage('CheckOutCode'){
@@ -40,6 +37,7 @@ sendSlackNotifications('STARTED')
   }
   */
   }//try closing
+  /*
   catch(e){
   currentBuild.result="FAILURE"
   throw e
@@ -47,6 +45,7 @@ sendSlackNotifications('STARTED')
   finally{
   sendSlackNotifications(currentBuild.result)
   }
+  */
 } //Node closing
 
 /*
