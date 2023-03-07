@@ -37,21 +37,21 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
   }
   */
   }//try closing
-  /*
+  
   catch(e){
   currentBuild.result="FAILURE"
   throw e
   }//catch closing
   finally{
-  sendSlackNotifications(currentBuild.result)
+  notifyBuild(currentBuild.result)
   }
-  */
+  
 } //Node closing
 
 /*
 //Code Snippet for sending slack notifications.
 
-def slackNotifications(String buildStatus = 'STARTED') {
+def notifyBuild(String buildStatus = 'STARTED') {
   // build status of null means successful
   buildStatus =  buildStatus ?: 'SUCCESS'
   //buildStatus = buildStatus ? "SUCCESS":"FAILURE"
